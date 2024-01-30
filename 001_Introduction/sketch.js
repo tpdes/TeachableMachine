@@ -65,12 +65,12 @@ async function predict() {
   );
   label = sortedPrediction[0].className;
   // Show the result
-  const res = select("#res"); // select <span id="res">
-  res.html(sortedPrediction[0].className);
+  //const res = select("#res"); // select <span id="res">
+  //res.html(sortedPrediction[0].className);
 
   // Show the probability
-  const prob = select("#prob"); // select <span id="prob">
-  prob.html(sortedPrediction[0].probability.toFixed(2));
+  //const prob = select("#prob"); // select <span id="prob">
+  //prob.html(sortedPrediction[0].probability.toFixed(2));
 
   // draw the keypoints and skeleton
   if (pose) {
