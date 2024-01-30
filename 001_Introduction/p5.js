@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Poses classifier</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/pose@0.8/dist/teachablemachine-pose.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.dom.min.js"></script>
+  </head>
+
+  <style>
+    .bold-text {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+
+  <body>
+    <h2>Poses classifier on Webcam</h2>
+    <div>
+      <p>
+        The Poses Classifier classify video as class
+        <span id="res" class="bold-text">...</span> with
+        <span id="prob" class="bold-text">...</span> confidence.
+      </p>
+      <p>Tilt head left and right</p>
+
+      <div id="vidContainer"></div>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
